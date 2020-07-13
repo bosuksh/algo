@@ -1,4 +1,4 @@
-## 2. Array and List
+## 2. 배열과 리스트 (Array and List)
 
 자바를 사용할 때, List나 Arrays 클래스를 사용하면 유용한 점이 많이 있다.
 
