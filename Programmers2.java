@@ -1,4 +1,3 @@
-import java.util.HashMap;
 
 class Programmers2 {
     public static void main(String[] args) {

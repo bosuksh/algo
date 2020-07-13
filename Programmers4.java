@@ -1,5 +1,4 @@
 import java.util.Arrays;
-import java.util.*;
 
 class Programmers4 {
     public static void main(String[] args) {

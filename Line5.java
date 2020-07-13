@@ -1,10 +1,8 @@
 import java.util.Arrays;
-import java.util.stream.IntStream;
-import java.util.HashMap;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.Iterator;
-import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -51,7 +49,6 @@ public class Line5 {
             }
         });
 
-        Map<String, Integer> sortedMap = new LinkedHashMap<>();
         int idx = 0;
         for (Iterator<Map.Entry<String, Integer>> iter = list.iterator(); iter.hasNext();) {
             Map.Entry<String, Integer> entry = iter.next();
