@@ -86,6 +86,6 @@ T[] copyArray = Arrays.copyOfRange(array,fromIndex, toIndex);
 
 
 
-[관련문제]: https://programmers.co.kr/learn/courses/30/lessons/42748
+[관련문제](https://programmers.co.kr/learn/courses/30/lessons/42748)
 
 알고리즘 문제를 풀 때 주어진 것들을 잘 이용해서 노가다로 시간낭비 하지 말자.
