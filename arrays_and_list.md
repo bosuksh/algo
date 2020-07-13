@@ -12,6 +12,7 @@
 
 List에 들어있는 함수는 대부분 **Collections** 클래스를 통해서 다양하게 사용할 수 있다.
 
+
 1. 그 중 가장 알고리즘에서 많이 사용하는 것은 sort이다.
 
 ```java
@@ -24,6 +25,7 @@ Collections.sort(List, Comparator<T> comparator);
 
 
 
+
 2. 또, 자주 사용하는 것 중 하나는 reverse이다. 
 
 reverse는 현재 있는 리스트를 뒤집어준다. 즉, 맨 앞 원소가 맨 뒤로가고 맨 뒤 원소가 맨 앞으로 오게된다.
@@ -33,6 +35,7 @@ Collections.reverse(List)
 ```
 
 예를 들어, 정렬을 오름차순이 아닌 내림차순을 하고 싶을 때, Collections.sort() 후 Collections.reverse()를 사용하면 뒤집으면 내림차순 정렬을 할 수 있게 된다. 
+
 
 
 
@@ -52,6 +55,7 @@ List.subList(fromIndex, toIndex)
 
 자바에서는 array보다는 List를 더 많이 사용하지만, array가 더 좋은 경우도 있다. 그렇기 때문에 **Arrays** 클래스를 잘 알아두면 좋다. 
 
+
 1. 여기도 마찬가지로 sort를 사용할 수 있다.
 
 사용법은 List와 마찬가지로  Arrays.sort()를 사용하면 인자로 들어가는 array가 정렬된다. 
@@ -64,6 +68,7 @@ comparator를 이용하면 Comparator에 맞는 조건으로 정렬을 할 수 �
 
 
 
+
 2. Arrays.asList를 이용하면 array를 List로 바꿀 수 있다. 
 
 ```java
@@ -73,6 +78,7 @@ List<T> tList = Arrays.asList(array);
 자바는 아무래도 List를 더 많이 사용하다 보니 List로 할 수 있는 게 많다. 이 메소드를 이용하면 array를 리스트로 한 번에 바꿀 수 있다. 
 
 *반대로 List를 array로 바꾸기 위해서는 List인스턴스의 toArray라는 메소드를 사용하면 된다.* 
+
 
 
 
