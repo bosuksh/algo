@@ -1,4 +1,4 @@
-## 2. Arrays 
+## 2. Array and List
 
 자바를 사용할 때, List나 Arrays 클래스를 사용하면 유용한 점이 많이 있다.
 
@@ -85,5 +85,7 @@ T[] copyArray = Arrays.copyOfRange(array,fromIndex, toIndex);
 메모리 참조로 인해 값이 변하는 것을 막기 위해서 복사를 할 때는 반복문이 아닌 copyOfRange 메소드를 이용해서 하면 원하는 위치의 array를 카피해서 사용할 수 있다. 
 
 
+
+[관련문제]: https://programmers.co.kr/learn/courses/30/lessons/42748
 
 알고리즘 문제를 풀 때 주어진 것들을 잘 이용해서 노가다로 시간낭비 하지 말자.
