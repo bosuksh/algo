@@ -9,3 +9,5 @@
 
 #### [1. 조합(Combination)](https://github.com/bosuksh/algo/blob/master/combination.md)
 
+#### [2. 배열과 리스트(Array and List)](https://github.com/bosuksh/algo/blob/master/arrays_and_list.md)
+
