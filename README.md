@@ -13,4 +13,4 @@
 
 #### [3. 깊이 우선 탐색(DFS)](https://github.com/bosuksh/algo/blob/master/dfs.md)
 
-#### [4. 백트래킹(Backtracking)](https://github.com/bosuksh/algo/blob/master/dfs.md)
+#### [4. 백트래킹(Backtracking)](https://github.com/bosuksh/algo/blob/master/backtracking.md)
