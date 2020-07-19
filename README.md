@@ -12,3 +12,5 @@
 #### [2. 배열과 리스트(Array and List)](https://github.com/bosuksh/algo/blob/master/arrays_and_list.md)
 
 #### [3. 깊이 우선 탐색(DFS)](https://github.com/bosuksh/algo/blob/master/dfs.md)
+
+#### [4. 백트래킹(Backtracking)](https://github.com/bosuksh/algo/blob/master/dfs.md)
