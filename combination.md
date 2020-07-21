@@ -101,3 +101,5 @@ private void makeNumber(int currentCount, int targetCount, String numbers, boole
 for문을 이용해서 다시 처음부터 탐색을 하고 방문체크를 통해 이미 체크한 값인지 확인한다. 
 
 물론 dfs가 끝나고 나올때는 방문체크를 다시 false로 해줘야 그 depth에서 여러개가 방문 체크 되는걸 막을 수 있다. 
+
+[관련문제](https://programmers.co.kr/learn/courses/30/lessons/42839)
