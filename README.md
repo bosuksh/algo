@@ -16,3 +16,5 @@
 #### [4. 백트래킹(Backtracking)](https://github.com/bosuksh/algo/blob/master/backtracking.md)
 
 #### [5. 너비 우선 탐색(BFS)](https://github.com/bosuksh/algo/blob/master/bfs.md)
+
+#### [6. 우선 순위 큐(Priority Queue)](https://github.com/bosuksh/algo/blob/master/priorityQueue.md)
