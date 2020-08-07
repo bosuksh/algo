@@ -20,3 +20,5 @@
 #### [6. 우선 순위 큐(Priority Queue)](https://github.com/bosuksh/algo/blob/master/priorityQueue.md)
 
 #### [7. 프림 알고리즘(Prim Algorithm)](https://github.com/bosuksh/algo/blob/master/prim.md)
+
+#### [8. 크루스칼 알고리즘(Kruskal Algorithm)](https://github.com/bosuksh/algo/blob/master/kruskal.md)
