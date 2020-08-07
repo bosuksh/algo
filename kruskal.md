@@ -54,23 +54,23 @@ public int solution(int n, int[][] costs) {	//cost[i][0]: 시작점, cost[i][1]:
   parent = new int[n];		//parent 초기화
   PriorityQueue<int[]> priorityQueue = new PriorityQueue<>(Comparator.comparing(o -> o[2]));	// 비용이 가장 낮은 것을 뱉도록 만든 우선순위 큐
   for(int i = 0; i< costs.length; i++) {
-    priorityQueue.add(costs[i]);				//큐에 간선들을 넣어준다.
+    priorityQueue.add(costs[i]);    //큐에 간선들을 넣어준다.
   }
   for(int i = 0; i< n; i++) {
-    parent[i] = i;											//각 노드에 대해서 자신의 부모를 자신으로 초기화 
+    parent[i] = i;    //각 노드에 대해서 자신의 부모를 자신으로 초기화 
   }
   int answer = 0;
   for(int i = 0; i< costs.length; i++) {
-    int[] node = priorityQueue.poll();	//queue에서 cost 낮은 순으로 하나씩 꺼낸 후
+    int[] node = priorityQueue.poll();    //queue에서 cost 낮은 순으로 하나씩 꺼낸 후
     int start = node[0];
     int end = node[1];
     int cost = node[2];
 
-    int rootA = find(start);						// 두점의 루트를 찾는다. 
+    int rootA = find(start);  // 두점의 루트를 찾는다. 
     int rootB = find(end);
     if(rootA == rootB) continue;				// 루트가 같으면 싸이클이 생기므로 pass
 
-    union(start,end);										// 다르면 두개를 union해주고 answer에 코스트를 더해준다. 
+    union(start,end);   // 다르면 두개를 union해주고 answer에 코스트를 더해준다. 
     answer += cost;
   }
   return answer;
