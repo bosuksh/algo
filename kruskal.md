@@ -68,7 +68,7 @@ public int solution(int n, int[][] costs) {	//cost[i][0]: 시작점, cost[i][1]:
 
     int rootA = find(start);  // 두점의 루트를 찾는다. 
     int rootB = find(end);
-    if(rootA == rootB) continue;				// 루트가 같으면 싸이클이 생기므로 pass
+    if(rootA == rootB) continue;    // 루트가 같으면 싸이클이 생기므로 pass
 
     union(start,end);   // 다르면 두개를 union해주고 answer에 코스트를 더해준다. 
     answer += cost;
