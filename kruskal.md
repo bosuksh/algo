@@ -74,6 +74,7 @@ public int solution(int n, int[][] costs) {	//cost[i][0]: 시작점, cost[i][1]:
     answer += cost;
   }
   return answer;
+}
     
 ```
 
