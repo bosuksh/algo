@@ -22,3 +22,5 @@
 #### [7. 프림 알고리즘(Prim Algorithm)](https://github.com/bosuksh/algo/blob/master/prim.md)
 
 #### [8. 크루스칼 알고리즘(Kruskal Algorithm)](https://github.com/bosuksh/algo/blob/master/kruskal.md)
+
+#### [9. 시간 관련 함수](https://github.com/bosuksh/algo/blob/master/timeInterval.md)
