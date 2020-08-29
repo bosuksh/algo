@@ -17,26 +17,26 @@
 
 ```java
  public static void combination(int current_count, int target_count, int current_position, List<Integer> check, List<Integer> clothesCount) {
-        if(current_count == target_count) {					// 선택할 개수와 선택한 개수가 같은지 확인
-            int temp_answer = 1;
-            for(int i = 0; i< check.size(); i++) {	// check된 애들을 찾아서 연산 해준다. 
-                if(check.get(i) == 1) {
-                    temp_answer  *= clothesCount.get(i);
-                }
-            }
-            answer += temp_answer;
-            return;
-        }
+   if(current_count == target_count) {			// 선택할 개수와 선택한 개수가 같은지 확인
+     int temp_answer = 1;
+     for(int i = 0; i< check.size(); i++) {	// check된 애들을 찾아서 연산 해준다. 
+       if(check.get(i) == 1) {
+         temp_answer  *= clothesCount.get(i);
+       }
+     }
+     answer += temp_answer;
+     return;
+   }
 
-        if(current_position >= check.size()) {		// 리스트의 현재 인덱스가 배열을 넘어갈 때 return
-            return ;
-        }
+   if(current_position >= check.size()) {		// 리스트의 현재 인덱스가 배열을 넘어갈 때 return
+     return ;
+   }
 
-        check.set(current_position,1);						// 현재 위치 체크 
-        combination(current_count+1,target_count, current_position+1,check, clothesCount);
-        check.set(current_position,0);						// 현재 위치 체크x
-        combination(current_count,target_count, current_position+1,check, clothesCount);
-    }
+   check.set(current_position,1);						// 현재 위치 체크 
+   combination(current_count+1,target_count, current_position+1,check, clothesCount);
+   check.set(current_position,0);						// 현재 위치 체크x
+   combination(current_count,target_count, current_position+1,check, clothesCount);
+ }
 ```
 
 
@@ -103,3 +103,42 @@ for문을 이용해서 다시 처음부터 탐색을 하고 방문체크를 통�
 물론 dfs가 끝나고 나올때는 방문체크를 다시 false로 해줘야 그 depth에서 여러개가 방문 체크 되는걸 막을 수 있다. 
 
 [관련문제](https://programmers.co.kr/learn/courses/30/lessons/42839)
+
+
+
+
+
+### 순열 또는 조합 문제 (조건이 주어질 때)
+
+조건이 주어질 때 경우의 수를 구하는 문제가 나오기도 한다. 
+
+**이럴 때는 모든 순열 혹은 조합을 구해놓고 그 이후에 조건을 판별하는 것을 추천한다.**
+
+[관련문제](https://programmers.co.kr/learn/courses/30/lessons/1835)
+
+이 문제를 확인해보면 조건이 주어지고 조건에 맞는 경우의 수를 구하는 문제인데
+
+```java
+private static String[] kakaoFriends = new String[]{"A", "C", "F", "J", "M", "N", "R", "T"};
+private static List<String> answerArray;
+/*
+* 함수 call은 permutation(0, 총개수, visited[],"") 이런 형태로 만든다. 
+**/
+private static void permutation(int current, int end, boolean[] visited, String answer) {
+  if(current == end) {
+    answerArray.add(answer);
+  }
+
+  for(int i = 0; i< kakaoFriends.length; i++) {
+    if(!visited[i]) {
+      visited[i] = true;
+      answer+= kakaoFriends[i];
+      permutation(current+1,end,visited,answer);
+      visited[i] = false;
+      answer = answer.substring(0,answer.length()-1);
+    }
+  }
+}
+```
+
+순열에 들어가는 모든 애들을 갖고 순열을 돌린 후 **answerArray**에 모든 걸 넣어주고 해당 조건을 통해  걸러내주면 된다. 
