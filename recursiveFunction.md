@@ -18,9 +18,9 @@ DFS, 조합, 순열 등에서 사용되는데 재귀에 대표적인 것은 피�
 
 이걸 푸는 알고리즘은 간단하다. 재귀적으로 
 
-1. n-1개의 블록을 A에서 B로 옮긴다. 
-2. n번째 블록을 A에서 C로 옮긴다.
-3. n-1번째 블록을 B에서 C로 옮긴다.
+**1. n-1개의 블록을 A에서 B로 옮긴다.** 
+**2. n번째 블록을 A에서 C로 옮긴다.**
+**3. n-1번째 블록을 B에서 C로 옮긴다.**
 
 이 과정을 재귀적으로 하면 된다.
 
@@ -45,3 +45,5 @@ private static void hanoiProcess(int n, int first_pillar, int third_pillar, int 
 ```
 
 이런식으로 answerList에 기둥으로 옮겨가는 순서가 차례대로 담기게 된다.
+
+[그림출처](https://shoark7.github.io/programming/algorithm/tower-of-hanoi)
