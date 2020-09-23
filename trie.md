@@ -36,11 +36,11 @@ public static class Trie {
       }
       current = current.children[unit - 'a'];			// 단어 하나하나마다 자식을 타고 내려감
     }
-    current.isTerminal = true;										// 단어 종료후 terminal true
+    current.isTerminal = true;					// 단어 종료후 terminal true
   }
 
   public int search(char[] word) {
-    Trie current = this;												// root부터 찾는다.
+    Trie current = this;							 // root부터 찾는다.
     for(char unit: word) {
       if(current.children[unit - 'a'] == null) {// 단어가 끝나지 않았는데 자식이 없으면 단어 존재 X 
         return 0;
