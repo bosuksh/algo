@@ -47,7 +47,7 @@ public static class Trie {
       }
       current = current.children[unit - 'a'];
     }
-    return current.count;											// 현재 노드 밑으로 존재하는 단어의 개수 리턴
+    return current.count;						// 현재 노드 밑으로 존재하는 단어의 개수 리턴
   }
 }
 ```
