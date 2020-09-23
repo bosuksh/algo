@@ -28,3 +28,5 @@
 #### [10. Map 정렬](https://github.com/bosuksh/algo/blob/master/map.md)
 
 #### [11. 재귀함수(Recursive Funtion)- 하노이의 탑](https://github.com/bosuksh/algo/blob/master/recursiveFunction.md)
+
+#### [12. 트라이(Trie)](https://github.com/bosuksh/algo/blob/master/trie.md)
