@@ -36,18 +36,18 @@ public static class Trie {
       }
       current = current.children[unit - 'a'];			// 단어 하나하나마다 자식을 타고 내려감
     }
-    current.isTerminal = true;										// 단어 종료후 terminal true
+    current.isTerminal = true;					// 단어 종료후 terminal true
   }
 
   public int search(char[] word) {
-    Trie current = this;												// root부터 찾는다.
+    Trie current = this;							 // root부터 찾는다.
     for(char unit: word) {
       if(current.children[unit - 'a'] == null) {// 단어가 끝나지 않았는데 자식이 없으면 단어 존재 X 
         return 0;
       }
       current = current.children[unit - 'a'];
     }
-    return current.count;											// 현재 노드 밑으로 존재하는 단어의 개수 리턴
+    return current.count;						// 현재 노드 밑으로 존재하는 단어의 개수 리턴
   }
 }
 ```
@@ -60,7 +60,7 @@ public static class Trie {
 
 [관련 문제](https://programmers.co.kr/learn/courses/30/lessons/60060)(프로그래머스 가사검색)
 
-[솔루션]()
+[솔루션](https://github.com/bosuksh/algo/blob/master/problems/SearchLyrics.java)
 
 
 

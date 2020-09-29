@@ -1,8 +1,8 @@
-# Algorithm
+# Algorithm & Data Structure
 
 
 
-코딩테스트에서 자주(?) 사용할 거 같은 알고리즘 모음
+코딩 문제 풀다가 자주 사용할 거 같은 알고리즘 모음
 하나씩 추가 될 예정 
 
 
@@ -28,3 +28,5 @@
 #### [10. Map 정렬](https://github.com/bosuksh/algo/blob/master/map.md)
 
 #### [11. 재귀함수(Recursive Funtion)- 하노이의 탑](https://github.com/bosuksh/algo/blob/master/recursiveFunction.md)
+
+#### [12. 트라이(Trie)](https://github.com/bosuksh/algo/blob/master/trie.md)
