@@ -60,7 +60,7 @@ public static class Trie {
 
 [관련 문제](https://programmers.co.kr/learn/courses/30/lessons/60060)(프로그래머스 가사검색)
 
-[솔루션](https://github.com/bosuksh/algo/blob/master/problems/SearchLyrics.java)
+[솔루션](https://github.com/bosuksh/algo/blob/master/Trie/P_SearchLyrics.java)
 
 
 
